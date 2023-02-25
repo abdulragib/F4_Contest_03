@@ -10,7 +10,7 @@
     width:30%;
     border:1px solid white;
     border-radius:10px;
-    height:650px;
+    height:550px;
     margin-top:20px;
     margin-right:10px;
 }
@@ -33,11 +33,11 @@ img{
 }
 
 .know-more{
-    width:50%;
+    width:70%;
     height:40px;
     background-color: white;
     color:black;
     border-radius:10px;
     position:relative;
-    left:25%;
+    left:15%;
 }
