@@ -11,13 +11,13 @@ const LandingPage = () => {
 
   const apiKey = '1a612cf2';
 
-  const api_url=`https://www.omdbapi.com/?apikey=${apiKey}&s=${value.replaceAll(" ", "+")}`;
- 
+  const api_url = `https://www.omdbapi.com/?apikey=${apiKey}&s=${value.replaceAll(" ", "+")}`;
+
   const apiCall = async () => {
     const response = await fetch(api_url);
     const data = await response.json();
     console.log(data);
-    setData(data.Search); 
+    setData(data.Search);
     setState(true);
   }
 
@@ -25,11 +25,11 @@ const LandingPage = () => {
     <div className='search'>
       <div>Movies App</div>
       <hr width="100%"></hr>
-      <p>Search For Movies By Their Title</p>
+      <p className='title'>Search For Movies By Their Title</p>
       <input placeholder='Enter Movie Name' onChange={(e) => { setValue(e.target.value) }}></input>
       <button className="submit" onClick={() => apiCall()}>Start Now!</button>
-      {state && (<h1>Movie Result for {value}</h1>)}<br></br>
-      <Cards value={value} state={state} data={data}/>
+      {state && (<h1>Movie Result for `{value}`</h1>)}<br></br>
+      <Cards value={value} state={state} data={data} />
     </div>
   )
 }

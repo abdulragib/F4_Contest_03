@@ -34,6 +34,11 @@ input{
     width:98%;
     height:30px;
     padding-left:10px;
+    margin-top:10px;
+}
+
+hr{
+    margin-top:10px;
 }
 
 /* card page */
@@ -42,4 +47,8 @@ input{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+.title{
+    margin-top:20px;
 }
