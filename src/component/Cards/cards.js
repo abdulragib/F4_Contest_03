@@ -8,7 +8,7 @@ export const Cards = ({value,state,data}) => {
 
     const handleClick = (id) => {
       // Navigate to the MovieDetails component when the button is clicked
-      navigate(`/movies/${data.id}`);
+      navigate('/movies/id',data);
     }
 
   return (
